@@ -7,10 +7,10 @@ export default async function handler(req, res) {
 
   try {
     const browser = await playwright.chromium.launch({
-      args: chromium.args,
-      executablePath: await chromium.executablePath(),
-      headless: chromium.headless
-    });
+  args: chromium.args,
+  executablePath: await chromium.executablePath(),
+  headless: true   // <-- PAKSA BOOLEAN
+});
 
     const context = await browser.newContext();
     const page = await context.newPage();
