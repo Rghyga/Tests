@@ -1,5 +1,5 @@
 # Image resmi Playwright SUDAH ada semua deps OS (libnss3 dll) + browser
-FROM mcr.microsoft.com/playwright:v1.47.0-jammy
+FROM mcr.microsoft.com/playwright:v1.58.2-jammy
 
 WORKDIR /app
 COPY package.json package-lock.json* ./
